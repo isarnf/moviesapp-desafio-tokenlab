@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absolutX="1dp"
+    tools:layout_editor_absolutY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lytInfoConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="128dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtInfoVoteAverage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfoTitle"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imgMovieInfo"
+            android:layout_width="301dp"
+            android:layout_height="278dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtInfoTitle"
+            android:layout_width="341dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="30dp"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgMovieInfo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtInfoVoteAverage"
+            android:layout_width="132dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="36dp"
+            android:text="VoteAverage"
+            android:textAlignment="center"
+            android:textColor="#9C27B0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfoTitle" />
+
+        <TextView
+            android:id="@+id/txtInfoVoteCount"
+            android:layout_width="51dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:text="VoteCount"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.447"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfoVoteAverage" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="votes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.58"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfoVoteAverage" />
+
+        <TextView
+            android:id="@+id/txtInfoRuntime"
+            android:layout_width="41dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="32dp"
+            android:text="Runtime"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.27"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="43dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="32dp"
+            android:text="mins"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.383"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="144dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:text="Original Language:"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfoRuntime" />
+
+        <TextView
+            android:id="@+id/txtInfoGenres"
+            android:layout_width="342dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:text="Genres"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.449"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/txtInfoReleaseDate"
+            android:layout_width="108dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:text="Date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfoOriginalLanguage" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="107dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:text="Release Date:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/txtInfoOverview"
+            android:layout_width="344dp"
+            android:layout_height="197dp"
+            android:layout_marginTop="8dp"
+            android:text="Overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfoGenres" />
+
+        <TextView
+            android:id="@+id/txtInfoOriginalLanguage"
+            android:layout_width="59dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Lang"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfoRuntime" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="68dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="32dp"
+            android:text="Runtime:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

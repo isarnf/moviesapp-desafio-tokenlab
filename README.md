@@ -15,10 +15,7 @@ O desafio consiste em elaborar um aplicativo que obtenha os dados desta API, apr
 
 ## Requisitos:
 
-- O projeto deve ser desenvolvido utilizando uma das seguintes tecnologias:
--- Flutter (Dart);
--- Android Nativo (Kotlin ou Java);
--- iOS Nativo (Swift);
+- O projeto deve ser desenvolvido utilizando uma das seguintes tecnologias: Flutter (Dart), Android Nativo (Kotlin ou Java) ou iOS Nativo (Swift);
 
 - O aplicativo deve ter no mínimo duas telas. Na primeira deve ser mostrada uma lista dos filmes (com imagem e título, ou só imagem). Ao selecionar um filme desta lista, o usuário deve ser redirecionado para uma tela de detalhes, onde mais informações devem ser exibidas. Você não precisa mostrar todas as informações que a API te der sobre os filmes.
 
